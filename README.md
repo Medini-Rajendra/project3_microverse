@@ -19,9 +19,9 @@ Checked with linter errors and html technologies are used.
 [Live Demo Link](https://livedemo.com)
 
 ## Setup 
-- git clone https://github.com/Medini-Rajendra/Phase2_webpage_project.git
+- git clone https://github.com/Medini-Rajendra/project3_microverse.git
 - cd into the folder
-- git checkout design_branch
+- git checkout work_branch
 - open `index.html` with live server
 
 ## Authors
