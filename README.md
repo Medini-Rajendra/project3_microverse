@@ -16,7 +16,7 @@ Checked with linter errors and html technologies are used.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://medini-rajendra.github.io/project3_microverse/)
 
 ## Setup 
 - git clone https://github.com/Medini-Rajendra/project3_microverse.git
