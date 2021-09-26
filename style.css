@@ -131,6 +131,19 @@ nav {
   border: 1px solid blue;
 }
 
+.mobilepara > a {
+  color: #7f8cff;
+  padding-left: 5%;
+  margin-top: unset;
+  margin-bottom: 3%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
 .grid-container > div > a {
   width: 40%;
   padding: 4%;
@@ -151,7 +164,7 @@ nav {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  color: #6070FF;
+  color: #6070ff;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -174,19 +187,6 @@ nav {
 
 .mobilepara > ul > li:first-child {
   padding-left: unset;
-}
-
-.mobilepara > a {
-  color: #7f8cff;
-  padding-left: 5%;
-  margin-top: unset;
-  margin-bottom: 3%;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
 }
 
 .js_flex > img {
