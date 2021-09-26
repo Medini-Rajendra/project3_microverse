@@ -1,75 +1,35 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Phase 2 Mobile Website Design
 
-> One paragraph statement about the project.
+> In this project, the middle part of the website design like work section and framework, skills sections were designed.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+Checked with linter errors and html technologies are used.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS, GitHub Pages
+- WebHint, StyleLint packages are used to check for linter errors
+- Visual Studio
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://medini-rajendra.github.io/project3_microverse/)
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+## Setup 
+- git clone https://github.com/Medini-Rajendra/project3_microverse.git
+- cd into the folder
+- git checkout work_branch
+- open `index.html` with live server
 
 ## Authors
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+👤 **Rajendra Medini**
+- GitHub: [@Medini-Rajendra](https://github.com/Medini-Rajendra)
+- Twitter: [@invenire512](https://twitter.com/invenire512)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/medinichaitanya/)
 
 ## 📝 License
 
