@@ -144,6 +144,10 @@ nav {
   text-decoration: none;
 }
 
+.mobilepara > a {
+  color: red;
+}
+
 .grid-container > div > a {
   width: 40%;
   padding: 4%;
