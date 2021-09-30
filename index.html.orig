@@ -165,7 +165,14 @@
             <hr>
         </div>
     </section>
+<<<<<<< HEAD
+    <form action="https://formspree.io/f/xnqlrqag">
+        <input type="text" name="FullNames" id="name" maxlength="30" placeholder=" Enter your names" required>      
+        <input type="email" name="EmailAddress" id="email" placeholder="Enter your email" required>
+    </form>
+=======
     <section class="contact_page">
+        <!--img class="contact_image" src='./images/contact_form_shapes.svg' alt="contact form image"!-->
         <h1>Contact me</h1>
         <p>If you have an application you<br>
             are interested in developing, a<br>
@@ -189,5 +196,7 @@
             </ul>
         </form>
     </section>
+    
+>>>>>>> contact form has been designed
 </body>
 </html>
