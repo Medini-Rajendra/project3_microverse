@@ -144,10 +144,6 @@ nav {
   text-decoration: none;
 }
 
-.mobilepara > a {
-  color: red;
-}
-
 .grid-container > div > a {
   width: 40%;
   padding: 4%;
@@ -421,7 +417,7 @@ nav {
 .contact_page {
   position: relative;
   text-align: center;
-  background: #6070FF url('./images/contact_form_shapes.svg') 100% 70%;
+  background: #6070ff url('./images/contact_form_shapes.svg') 100% 70%;
   background-repeat: no-repeat;
   border-top-left-radius: 70px;
   height: 779px;
@@ -439,7 +435,8 @@ nav {
   padding-left: unset;
 }
 
-.contact_form_name, .contact_form_email {
+.contact_form_name,
+.contact_form_email {
   width: 90%;
   height: 4em;
   border-radius: 13px;
