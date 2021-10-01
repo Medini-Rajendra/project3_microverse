@@ -29,6 +29,40 @@ nav {
   margin: 6% 10%;
 }
 
+.about_section > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  padding-top: 20%;
+  padding-left: 5%;
+  margin-bottom: unset;
+}
+
+.skill_div > h1 {
+  padding-left: 10%;
+}
+
+.framework > h1 {
+  padding-left: 10%;
+}
+
+.contact_page > h1 {
+  color: white;
+  padding-left: 15%;
+  padding-top: 35%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
 .container > div > h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -42,6 +76,26 @@ nav {
 
 .mobilepara {
   flex-direction: column;
+}
+
+.contact_page > p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  margin-top: unset;
+}
+
+.about_section > p {
+  padding-left: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .mobilepara > div > p {
@@ -65,6 +119,13 @@ nav {
   color: #6070ff;
 }
 
+.about_section > ul > li {
+  display: inline;
+  height: 2em;
+  width: 50%;
+  padding-left: 5%;
+}
+
 .mobilepara > div > ul > li {
   display: inline;
   height: 2em;
@@ -75,13 +136,6 @@ nav {
 .grid-container > div > div > ul {
   padding-top: 3%;
   padding-bottom: 3%;
-}
-
-.about_section > ul > li {
-  display: inline;
-  height: 2em;
-  width: 50%;
-  padding-left: 5%;
 }
 
 .about_section > h4 {
@@ -186,6 +240,10 @@ nav {
   line-height: 16px;
 }
 
+.about_section > ul > li:first-child {
+  padding-left: unset;
+}
+
 .mobilepara > div > ul > li:first-child {
   padding-left: unset;
 }
@@ -216,51 +274,6 @@ nav {
   padding-right: 30px;
   margin-left: 4%;
   padding-left: 5px;
-}
-
-.about_section > h1 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  padding-top: 20%;
-  padding-left: 5%;
-  margin-bottom: unset;
-}
-
-.skill_div > h1 {
-  padding-left: 10%;
-}
-
-.framework > h1 {
-  padding-left: 10%;
-}
-
-.contact_page > h1 {
-  color: white;
-  padding-left: 15%;
-  padding-top: 35%;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.contact_page > p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: white;
-  margin-top: unset;
 }
 
 .grid-container > div > div > h1 {
@@ -297,15 +310,6 @@ nav {
   margin-bottom: unset;
   padding-left: 4%;
   margin-top: unset;
-}
-
-.about_section > p {
-  padding-left: 5%;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .grid-container > div > div > p {
@@ -362,10 +366,6 @@ nav {
   width: 400px;
   border-radius: 10px;
   background-color: white;
-}
-
-.about_section > ul > li:first-child {
-  padding-left: unset;
 }
 
 .lang_section {
@@ -486,12 +486,11 @@ nav {
   display: none;
 }
 
-@media only screen and (min-device-width: 992px){
+@media only screen and (min-device-width: 992px) {
   body {
     background: white url('./images/Header_bg_desktop.svg') 100% 70%;
     background-repeat: no-repeat;
     background-position: 0 5rem;
-    width: unset;
   }
 
   .main_heading {
@@ -504,8 +503,51 @@ nav {
     padding-top: unset;
   }
 
+  .about_section > h1 {
+    margin-bottom: 3%;
+    padding-top: unset;
+    padding-left: unset;
+  }
+
+  .about_section > p {
+    padding-left: unset;
+    margin-top: unset;
+    width: 220%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+  }
+
+  .contact_page > h1 {
+    padding-top: 10%;
+    padding-left: 40%;
+    margin-bottom: unset;
+  }
+
+  .framework > h1,
+  .skill_div > h1 {
+    margin-top: unset;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: unset;
+  }
+
   .mobilepara > div > h1 {
     padding-top: 14%;
+  }
+
+  .contact_page > p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .mobilepara > div > p {
@@ -515,6 +557,19 @@ nav {
 
   .social_media_icons {
     margin-top: 1%;
+  }
+
+  .header_list_items > li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
   }
 
   .social_media_icons > li:nth-child(even),
@@ -540,19 +595,6 @@ nav {
     display: flex;
   }
 
-  .header_list_items > li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 10%;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-  }
-
   .header_list_items > li:first-child {
     margin-left: unset;
   }
@@ -572,12 +614,31 @@ nav {
 
   .grid-container {
     margin-top: 20%;
-    background: #E5E5E5;
+    background: #e5e5e5;
   }
 
   .grid-item {
     display: flex;
     width: 1000px;
+  }
+
+  .js_flex > img,
+  .html_flex > img,
+  .css_flex > img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .js_flex > img {
+    margin-left: 15%;
+  }
+
+  .html_flex > img {
+    margin-left: 20%;
+  }
+
+  .css_flex > img {
+    margin-left: 20%;
   }
 
   .grid-container > div > img {
@@ -603,6 +664,15 @@ nav {
     line-height: 52px;
   }
 
+  .about_section > ul {
+    padding-left: unset;
+  }
+
+  .grid-container > div > div > ul {
+    padding-top: unset;
+    padding-left: 2%;
+  }
+
   .grid-container > div > div > div > ul {
     margin-top: -1.5%;
   }
@@ -617,9 +687,8 @@ nav {
     margin-top: unset;
   }
 
-  .grid-container > div > div > ul {
-    padding-top: unset;
-    padding-left: 2%;
+  .about_section > a {
+    margin-left: unset;
   }
 
   .grid-container > div > div > a {
@@ -640,39 +709,8 @@ nav {
     margin-left: 8%;
   }
 
-  .about_section > p {
-    padding-left: unset;
-    margin-top: unset;
-    width: 220%;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: justify;
-  }
-
-  .about_section > h1 {
-    margin-bottom: 3%;
-    padding-top: unset;
-    padding-left: unset;
-  }
-
   .p_desktop_about {
     display: flex;
-  }
-
-  .about_section > h4 {
-    padding-left: unset;
-    margin-bottom: 2%;
-  }
-
-  .about_section > ul {
-    padding-left: unset;
-  }
-
-  .about_section > a {
-    margin-left: unset;
   }
 
   .get_lang_flex {
@@ -698,7 +736,7 @@ nav {
     display: flex;
     flex-direction: column;
     margin-top: unset;
-  } 
+  }
 
   .js_flex {
     width: 100%;
@@ -725,28 +763,9 @@ nav {
     line-height: 20px;
   }
 
-  .html_flex > h3, 
+  .html_flex > h3,
   .css_flex > h3 {
     padding-left: 20%;
-  }
-
-  .js_flex > img,
-  .html_flex > img,
-  .css_flex > img {
-    width: 48px;
-    height: 48px;
-  }
-
-  .js_flex > img {
-    margin-left: 15%;
-  }
-
-  .html_flex > img {
-    margin-left: 20%;
-  }
-
-  .css_flex > img {
-    margin-left: 20%;
   }
 
   .lang_flex_row {
@@ -754,31 +773,14 @@ nav {
   }
 
   .contact_page {
-    background: #6070FF url('./images/contact_form_desktop_background\ shapes.svg') 100% 70%;
+    background: #6070ff url('./images/contact_form_desktop_background\ shapes.svg') 100% 70%;
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 5%;
   }
 
-  .contact_page > h1 {
-    padding-top: 10%;
-    padding-left: 40%;
-    margin-bottom: unset;
-  }
-
   .lang_section > i {
-    padding-left: 90%
-  }
-
-  .framework > h1,
-  .skill_div > h1 {
-    margin-top: unset;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: unset;
+    padding-left: 90%;
   }
 
   .framework > i,
@@ -800,14 +802,6 @@ nav {
     text-align: center;
     padding-top: 1%;
     margin-bottom: 0.5%;
-  }
-
-  .contact_page > p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
   }
 
   .contact_form_name,
