@@ -787,7 +787,8 @@ nav {
   }
 
   .contact_page {
-    background: #6070ff
+    background:
+      #6070ff
       url("./images/contact_form_desktop_background\ shapes.svg") 100% 70%;
     background-repeat: no-repeat;
     background-size: contain;
