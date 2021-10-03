@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html,
 body {
@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  background-image: url('./images/header-shapes-mobile.svg');
+  background-image: url("./images/header-shapes-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 5rem;
   background-color: #f7f7f9;
@@ -18,7 +18,7 @@ body {
 .main_heading {
   color: blue;
   padding-left: 30%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -37,7 +37,7 @@ nav {
 }
 
 .about_section > h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -59,7 +59,7 @@ nav {
   color: white;
   padding-left: 15%;
   padding-top: 35%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -71,7 +71,7 @@ nav {
 }
 
 .container > div > h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -86,7 +86,7 @@ nav {
 }
 
 .contact_page > p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -98,7 +98,7 @@ nav {
 
 .about_section > p {
   padding-left: 5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -107,7 +107,7 @@ nav {
 
 .mobilepara > div > p {
   margin: 5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -148,7 +148,7 @@ nav {
 .about_section > h4 {
   padding-left: 5%;
   margin-top: unset;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   color: #7f8cff;
   font-weight: 500;
@@ -164,7 +164,7 @@ nav {
   padding-bottom: 2%;
   border-radius: 8px;
   margin: 1%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -182,7 +182,7 @@ nav {
   margin-bottom: 10%;
   margin-left: 3%;
   color: #396df2;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -198,7 +198,7 @@ nav {
   padding-left: 5%;
   margin-top: unset;
   margin-bottom: 3%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -211,7 +211,7 @@ nav {
   padding: 4%;
   margin-left: 3%;
   color: #396df2;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -223,7 +223,7 @@ nav {
 }
 
 .grid-container > div > div > ul > li > h4 > a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: #6070ff;
@@ -240,7 +240,7 @@ nav {
 .grid-container > div > div > div > ul > li {
   display: inline;
   color: gray;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -283,7 +283,7 @@ nav {
 .grid-container > div > div > h1 {
   text-align: left;
   padding-left: 3%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -298,7 +298,7 @@ nav {
   padding-left: 3%;
   padding-top: 5%;
   margin-bottom: unset;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -321,7 +321,7 @@ nav {
   padding-left: 3%;
   padding-top: 4%;
   margin-bottom: unset;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -382,7 +382,7 @@ nav {
 }
 
 .lang_section > h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -428,7 +428,7 @@ nav {
 .contact_page {
   position: relative;
   text-align: center;
-  background: #6070ff url('./images/contact_form_shapes.svg') 100% 70%;
+  background: #6070ff url("./images/contact_form_shapes.svg") 100% 70%;
   background-repeat: no-repeat;
   border-top-left-radius: 70px;
   height: 779px;
@@ -521,7 +521,7 @@ nav {
     padding-left: unset;
     margin-top: unset;
     width: 220%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -538,7 +538,7 @@ nav {
   .framework > h1,
   .skill_div > h1 {
     margin-top: unset;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -551,7 +551,7 @@ nav {
   }
 
   .contact_page > p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -561,6 +561,20 @@ nav {
   .mobilepara > div > p {
     margin-top: 1%;
     margin-bottom: 3%;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .social_media_icons {
@@ -571,7 +585,7 @@ nav {
     list-style-type: none;
     display: inline-block;
     margin-left: 10%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -671,7 +685,7 @@ nav {
 
   .grid-container > div > div > h1 {
     margin-top: 2%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -711,7 +725,7 @@ nav {
   }
 
   .grid-container > div > div > p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -737,7 +751,7 @@ nav {
   }
 
   .all_fm_skill > div > h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -770,7 +784,7 @@ nav {
   .js_flex > h3,
   .html_flex > h3,
   .css_flex > h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -787,7 +801,9 @@ nav {
   }
 
   .contact_page {
-    background: #6070ff url('./images/contact_form_desktop_background\ shapes.svg') 100% 70%;
+    background:
+      #6070ff
+      url("./images/contact_form_desktop_background\ shapes.svg") 100% 70%;
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 5%;
