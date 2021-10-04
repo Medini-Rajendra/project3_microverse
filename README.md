@@ -2,7 +2,7 @@
 
 # Phase 2 Mobile Website Design
 
-> In this project, the middle part of the website design like work section and framework, skills sections were designed.
+> In this project, the desktop version and mobile version of the website was completed.
 
 ![screenshot](./app_screenshot.png)
 
