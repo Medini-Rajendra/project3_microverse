@@ -15,6 +15,63 @@ body {
   background-color: #f7f7f9;
 }
 
+.Menubutton {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(8px);
+}
+
+.Menubutton > i {
+  color: white;
+}
+
+.menu_ul {
+  margin-top: 18%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 360%;
+  list-style-type: none;
+}
+
+.material-icons {
+  float: right;
+  margin-top: 7%;
+  margin-right: 10%;
+}
+
+.about_section > a {
+  width: 40%;
+  padding: 4%;
+  padding-left: unset;
+  padding-right: unset;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  color: #396df2;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid blue;
+}
+
+.menu_ul > li > a {
+  text-decoration: none;
+}
+
 .main_heading {
   color: blue;
   padding-left: 30%;
@@ -170,27 +227,6 @@ nav {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-}
-
-.about_section > a {
-  width: 40%;
-  padding: 4%;
-  padding-left: unset;
-  padding-right: unset;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-bottom: 10%;
-  margin-left: 3%;
-  color: #396df2;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  border: 1px solid blue;
 }
 
 .mobilepara > div > a {
