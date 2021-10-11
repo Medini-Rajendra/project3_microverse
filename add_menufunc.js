@@ -43,8 +43,6 @@ function MobileMenu() {
   a3.style.fontSize = 'xx-large';
 }
 
-/* document.getElementsByClassName("menubutton").addEventListener("click", MobileMenu()); */
-const logo = document.querySelector('#menuicon');
-/*eslint-disable*/
-logo.addEventListener('click', (event) => { MobileMenu(); });
-/* eslint-enable */
+module.exports = {
+  MobileMenu,
+};

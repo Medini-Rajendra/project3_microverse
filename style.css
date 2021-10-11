@@ -27,6 +27,10 @@ body {
   backdrop-filter: blur(8px);
 }
 
+.Menubutton > i {
+  color: white;
+}
+
 .menu_ul {
   margin-top: 18%;
   font-family: 'Poppins', sans-serif;
