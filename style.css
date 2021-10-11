@@ -22,6 +22,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #6070ff; 
+  mix-blend-mode: multiply; 
+  backdrop-filter: blur(8px); 
 }
 
 .menu_ul {
@@ -31,7 +34,18 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 360%;
+  list-style-type: none; 
 }
+
+.material-icons { 
+  float: right; 
+  margin-top: 7%; 
+  margin-right: 10%; 
+} 
+
+.menu_ul > li > a { 
+  text-decoration: none; 
+} 
 
 .main_heading {
   color: blue;
