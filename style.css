@@ -528,6 +528,119 @@ nav {
   display: none;
 }
 
+.section_pop_window {
+  position: fixed;
+  margin: 5%;
+  width: 90vw;
+  height: 90vh;
+  top: 0;
+  background: white;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.pop_container {
+  display: flex;
+}
+
+.closeicon {
+  font-size: 2em;
+}
+
+.portfolio_image {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.move_buttons {
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+
+.pop_title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+  width: 264px;
+  height: 16px;
+}
+
+.pop_button_edit {
+  background: white;
+  border: 0.5px solid black;
+  width: 79px;
+  height: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  white-space: nowrap;
+}
+
+.divider {
+  width: 10px;
+  height: auto;
+  display: inline-block;
+}
+
+.divider_live {
+  width: auto;
+  height: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.pop_content {
+  width: 80%;
+  height: 432px;
+  margin-top: 2em;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.padding_live {
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 20px;
+  background: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.buttons_live_pop {
+  width: 246px;
+  height: 51px;
+  margin-left: 80px;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.live_link1 {
+  background: url('../images/live_link.svg');
+  background-repeat: no-repeat;
+  background-position: 200px;
+}
+
+.live_link2 {
+  background: url('../images/github_portfolio.svg');
+  background-repeat: no-repeat;
+  background-position: 200px;
+}
+
 @media only screen and (min-device-width: 992px) {
   body {
     background: white url('./images/Header_bg_desktop.svg');
