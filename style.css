@@ -681,13 +681,13 @@ nav {
 }
 
 .live_link1 {
-  background: url('../images/live_link.svg');
+  background: url('./images/live_link.svg');
   background-repeat: no-repeat;
   background-position: 200px;
 }
 
 .live_link2 {
-  background: url('../images/github_portfolio.svg');
+  background: url('./images/github_portfolio.svg');
   background-repeat: no-repeat;
   background-position: 200px;
 }
