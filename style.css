@@ -532,32 +532,87 @@ nav {
   position: fixed;
   margin: 5%;
   width: 90vw;
-  height: 90vh;
+  height: 100vh;
   top: 0;
   background: white;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-top: unset;
   overflow-y: scroll;
 }
 
-.pop_container {
+.section_pop_window > img {
+  margin-left: 3%;
+}
+
+.section_pop_window > div > div > ul {
+  padding-left: 4%;
+}
+
+.section_pop_window > div > div > h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.h44flexclass > div {
   display: flex;
+}
+
+.section_pop_window > div > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+}
+
+.h44flexclass > div > h4 {
+  margin-top: 1%;
+  margin-bottom: unset;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;;
+  margin-left: 3%;
+}
+
+.section_pop_window > div > div > ul > li {
+  list-style-type: none;
+  display: inline;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.section_pop_window > div > div > ul {
+  margin-top: unset;
+  margin-bottom: unset;
 }
 
 .closeicon {
   font-size: 2em;
+  position: relative;
+  right: -200px;
 }
 
 .portfolio_image {
   margin-top: 20px;
-  width: 60%;
+  width: 93%;
 }
 
-.move_buttons {
-  margin-top: 10px;
-  justify-content: flex-start;
+.pop_container {
+  display: flex;
 }
 
 .pop_title {
@@ -566,21 +621,18 @@ nav {
   font-weight: bold;
   font-size: 20px;
   line-height: 80%;
-  width: 264px;
-  height: 16px;
 }
 
 .pop_button_edit {
-  background: white;
-  border: 0.5px solid black;
-  width: 79px;
-  height: 20px;
+  background: #ebebff;
+  color: blue;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
-  line-height: 80%;
   white-space: nowrap;
+  border-width: 0px;
+  margin-left: 3%;
 }
 
 .divider {
@@ -597,36 +649,35 @@ nav {
 }
 
 .pop_content {
-  width: 80%;
-  height: 432px;
-  margin-top: 2em;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 15px;
+  line-height: 24px;
+  margin-left: 3%;
 }
 
 .padding_live {
-  padding: 5px;
+  padding: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 13%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
   margin-top: 20px;
   background: white;
-  border: 1px solid black;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
 .buttons_live_pop {
-  width: 246px;
-  height: 51px;
-  margin-left: 80px;
-  margin-bottom: 5em;
   display: flex;
-  flex-direction: column;
+  margin-left: 3%;
+  margin-top: 7%;
 }
 
 .live_link1 {
