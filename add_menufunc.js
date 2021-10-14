@@ -57,7 +57,6 @@ const imgcont1=document.createElement('img')
 const licont1=document.createElement('li')
 const licont2=document.createElement('li')
 const licont3=document.createElement('li')
-const div16=document.createElement('div')
 const button10=document.createElement('button')
 const div17=document.createElement('div')
 const button11=document.createElement('button')
@@ -69,17 +68,59 @@ const div19=document.createElement('div')
 const button13=document.createElement('button')
 const div20=document.createElement('div')
 const button14=document.createElement('button')
+const divalign16=document.createElement('div')
+const div16=document.createElement('div')
+const div16cont=document.createElement('div')
+const divcover16=document.createElement('div')
+
+function detectMob() {
+  console.log('iam here')
+  return (window.innerWidth);
+}
 
 function pop_window_click() {
+    const getval=detectMob()
+    console.log(getval)
     body.append(section2)
-    section2.append(div14,h34,div15,h44flex,img21,p21,div16,div19)
+    if (window.innerWidth > 700) {
+      const button101=document.createElement('button')
+      const button111=document.createElement('button')
+      const button121=document.createElement('button')
+      if (div16 !== null) {
+        div16.innerHTML=""
+        div16cont.innerHTML=""
+        divcover16.innerHTML=""
+      } 
+      div16.append(button10,button11,button12,div17)  
+      div16cont.append(button101,button111,button121)
+      divcover16.append(div16,div16cont,div19)
+      button101.setAttribute('class', 'pop_button_edit')
+      button101.setAttribute('type', 'button')
+      button111.setAttribute('class', 'pop_button_edit')
+      button111.setAttribute('type', 'button')
+      button121.setAttribute('class', 'pop_button_edit')
+      button121.setAttribute('type', 'button')
+      button101.textContent='github'
+      button111.textContent='ruby'
+      button121.textContent='Bootstraps'
+    } else {
+      if (div16 !== null) {
+        div16.innerHTML=""
+        div16cont.innerHTML=""
+        divcover16.innerHTML=""
+      } 
+      div16.append(button10,button11,button12)
+      divcover16.append(div16,div19)
+    }
+    section2.append(div14,h34,div15,h44flex,img21,divalign16)
+    divalign16.append(p21,divcover16)
     div14.append(h34,div15)
     h44flex.append(div15cont)
     div15cont.append(h44cont,ulcont)
     ulcont.append(licont,licont1,licont2,licont3)
     licont.append(imgcont)
     licont2.append(imgcont1)
-    div16.append(button10,div17,button11,div18,button12)
+    
     div19.append(button13,div20,button14)
     h44flex.setAttribute('class', 'h44flexclass')
     section2.setAttribute('class', 'section_pop_window')
@@ -88,12 +129,14 @@ function pop_window_click() {
     div15.setAttribute('class', 'closeicon')
     div15.setAttribute('onclick', 'section2.remove()')
     div16.setAttribute('class', 'move_buttons')
+    div16cont.setAttribute('class', 'move_buttons')
     button10.setAttribute('class', 'pop_button_edit')
     button10.setAttribute('type', 'button')
     button11.setAttribute('class', 'pop_button_edit')
     button11.setAttribute('type', 'button')
     button12.setAttribute('class', 'pop_button_edit')
     button12.setAttribute('type', 'button')
+    divalign16.setAttribute('class', 'align_last_items')
     div17.setAttribute('class', 'divider')
     div18.setAttribute('class', 'divider')
     img21.setAttribute('class', 'portfolio_image')
@@ -110,6 +153,7 @@ function pop_window_click() {
     div20.setAttribute('class', 'divider_live')
     button14.setAttribute('class', 'padding_live live_link2')
     button14.setAttribute('onclick', "window.location.href='https://github.com/Medini-Rajendra/Mobile_Webpage_Menu';")
+    divcover16.setAttribute('class','aligndiv16elems')
 
     h34.textContent='Tonic'
     h44cont.textContent='CANOPY'

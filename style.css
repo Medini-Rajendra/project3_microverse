@@ -683,13 +683,15 @@ nav {
 .live_link1 {
   background: url('./images/live_link.svg');
   background-repeat: no-repeat;
-  background-position: 200px;
+  background-position: 95px;
+  background-size: 15%;
 }
 
 .live_link2 {
   background: url('./images/github_portfolio.svg');
   background-repeat: no-repeat;
-  background-position: 200px;
+  background-position: 125px;
+  background-size: 15%;
 }
 
 @media only screen and (min-device-width: 992px) {
@@ -699,6 +701,87 @@ nav {
     background-position: center 5rem;
     background-size: 95%;
     overflow-x: hidden;
+  }
+
+  .section_pop_window {
+    height: 90vh;
+  }
+
+  .section_pop_window > div > h1 {
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+
+  .section_pop_window > div > div > ul {
+    margin-top: 0.5%;
+    padding-left: unset;
+    width: 30%;
+  }
+
+  .section_pop_window > div > div > ul > li > img {
+    padding-left: 10%;
+  }
+
+  .move_buttons {
+    display: flex;
+  }
+
+  .move_buttons > button {
+    margin-top: 4%;
+  }
+
+  .pop_button_edit {
+    height: 20px;
+    margin-left: 5%;
+    margin-top: 12%;
+  }
+
+  .pop_content {
+    width: 100%;
+  }
+
+  .padding_live {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    text-align: left;
+    padding: unset;
+    padding-left: 7%;
+    margin-top: unset;
+    box-sizing: border-box;
+    font-size: 11px;
+  }
+
+  .live_link1 {
+    background-position: 80px;
+  }
+
+  .live_link2 {
+    background-position: 90px;
+  }
+
+  .move_buttons:first-child {
+    margin-left: unset;
+  }
+
+  .aligndiv16elems {
+    display: flex;
+    flex-direction: column;
+    height: 10px;
+  }
+
+  .buttons_live_pop {
+    margin-top: 15%;
+  }
+
+  .closeicon {
+    font-size: 2em;
+    position: relative;
+    left: 75%;
+  }
+  
+  .align_last_items {
+    display: flex;
   }
 
   .main_heading {
