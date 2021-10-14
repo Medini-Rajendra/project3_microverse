@@ -15,6 +15,13 @@ body {
   background-color: #f7f7f9;
 }
 
+#blur.active {
+  filter: blur(20px);
+  background-color: lightgrey;
+  pointer-events: none;
+  user-select: none;
+}
+
 .Menubutton {
   width: 100%;
   height: 100%;
@@ -532,7 +539,7 @@ nav {
   position: fixed;
   margin: 5%;
   width: 90vw;
-  height: 100vh;
+  height: 90vh;
   top: 0;
   background: white;
   z-index: 1;
@@ -703,8 +710,15 @@ nav {
     overflow-x: hidden;
   }
 
+  #blur.active {
+    filter: blur(20px);
+    background-color: lightgrey;
+    pointer-events: none;
+    user-select: none;
+  }
+
   .section_pop_window {
-    height: 90vh;
+    height: 80vh;
   }
 
   .section_pop_window > div > h1 {
@@ -713,13 +727,20 @@ nav {
   }
 
   .section_pop_window > div > div > ul {
-    margin-top: 0.5%;
     padding-left: unset;
     width: 30%;
   }
 
   .section_pop_window > div > div > ul > li > img {
-    padding-left: 10%;
+    padding-left: 3%;
+  }
+
+  .section_pop_window > div > div > ul > li {
+    padding-left: 3%;
+  }
+
+  .h44flexclass > div > h4 {
+    margin-top: 0.2%;
   }
 
   .move_buttons {
@@ -737,7 +758,7 @@ nav {
   }
 
   .pop_content {
-    width: 100%;
+    width: 70%;
   }
 
   .padding_live {
@@ -775,9 +796,9 @@ nav {
   }
 
   .closeicon {
-    font-size: 2em;
+    font-size: 3em;
     position: relative;
-    left: 75%;
+    left: 85%;
   }
   
   .align_last_items {
