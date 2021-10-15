@@ -43,156 +43,156 @@ function MobileMenu() {
   a3.style.fontSize = 'xx-large';
 }
 
-const section2=document.createElement('section')
-const div14=document.createElement('div')
-const h34=document.createElement('h1')
-const div15=document.createElement('div')
-const div15cont=document.createElement('div')
-const h44flex=document.createElement('div')
-const h44cont=document.createElement('h4')
-const ulcont=document.createElement('ul')
-const licont=document.createElement('li')
-const imgcont=document.createElement('img')
-const imgcont1=document.createElement('img')
-const licont1=document.createElement('li')
-const licont2=document.createElement('li')
-const licont3=document.createElement('li')
-const button10=document.createElement('button')
-const div17=document.createElement('div')
-const button11=document.createElement('button')
-const div18=document.createElement('div')
-const button12=document.createElement('button')
-const img21=document.createElement('img')
-const p21=document.createElement('p')
-const div19=document.createElement('div')
-const button13=document.createElement('button')
-const div20=document.createElement('div')
-const button14=document.createElement('button')
-const divalign16=document.createElement('div')
-const div16=document.createElement('div')
-const div16cont=document.createElement('div')
-const divcover16=document.createElement('div')
-
-
-function getElementsbyId(id) {
-  return [document.querySelectorAll("#blur")];
-}
+const section2 = document.createElement('section');
+const div14 = document.createElement('div');
+const h34 = document.createElement('h1');
+const div15 = document.createElement('div');
+const div15cont = document.createElement('div');
+const h44flex = document.createElement('div');
+const h44cont = document.createElement('h4');
+const ulcont = document.createElement('ul');
+const licont = document.createElement('li');
+const imgcont = document.createElement('img');
+const imgcont1 = document.createElement('img');
+const licont1 = document.createElement('li');
+const licont2 = document.createElement('li');
+const licont3 = document.createElement('li');
+const button10 = document.createElement('button');
+const div17 = document.createElement('div');
+const button11 = document.createElement('button');
+const div18 = document.createElement('div');
+const button12 = document.createElement('button');
+const img21 = document.createElement('img');
+const p21 = document.createElement('p');
+const div19 = document.createElement('div');
+const button13 = document.createElement('button');
+const div20 = document.createElement('div');
+const button14 = document.createElement('button');
+const divalign16 = document.createElement('div');
+const div16 = document.createElement('div');
+const div16cont = document.createElement('div');
+const divcover16 = document.createElement('div');
 
 function toggle() {
-  var getreturnelem=getElementsbyId('blur')
-  for(let ij=0; ij<getreturnelem[0].length; ij++) {
-    getreturnelem[0][ij].classList.toggle('active')
-  }
+  const getreturnelem = document.getElementById('blur');
+  const getreturnelem1 = document.getElementById('blur1');
+  const getreturnelem2 = document.getElementById('blur2');
+  const getreturnelem3 = document.getElementById('portfolio');
+
+  getreturnelem.classList.toggle('active');
+  getreturnelem1.classList.toggle('active');
+  getreturnelem2.classList.toggle('active');
+  getreturnelem3.classList.toggle('active');
 }
 
 function myFunction(e) {
-  var elems = document.querySelectorAll(".active");
-  for (let kj=0; kj<elems.length; kj++) {
-    if(elems[kj] !==null){
-      elems[kj].classList.remove("active");
+  const elems = document.querySelectorAll('.active');
+  for (let kj = 0; kj < elems.length; kj += 1) {
+    if (elems[kj] !== null) {
+      elems[kj].classList.remove('active');
     }
-    e.target.className = "active";
-    section2.remove()
+    e.target.className = 'active';
+    section2.remove();
   }
 }
 
-function pop_window_click() {
-    toggle()
-    body.append(section2)
-    if (window.innerWidth > 700) {
-      const button101=document.createElement('button')
-      const button111=document.createElement('button')
-      const button121=document.createElement('button')
-      if (div16 !== null) {
-        div16.innerHTML=""
-        div16cont.innerHTML=""
-        divcover16.innerHTML=""
-      } 
-      div16.append(button10,button11,button12,div17)  
-      div16cont.append(button101,button111,button121)
-      divcover16.append(div16,div16cont,div19)
-      button101.setAttribute('class', 'pop_button_edit')
-      button101.setAttribute('type', 'button')
-      button111.setAttribute('class', 'pop_button_edit')
-      button111.setAttribute('type', 'button')
-      button121.setAttribute('class', 'pop_button_edit')
-      button121.setAttribute('type', 'button')
-      button101.textContent='github'
-      button111.textContent='ruby'
-      button121.textContent='Bootstraps'
-    } else {
-      if (div16 !== null) {
-        div16.innerHTML=""
-        div16cont.innerHTML=""
-        divcover16.innerHTML=""
-      } 
-      div16.append(button10,button11,button12)
-      divcover16.append(div16,div19)
+function popWindowClick() {
+  toggle();
+  body.append(section2);
+  if (window.innerWidth > 700) {
+    const button101 = document.createElement('button');
+    const button111 = document.createElement('button');
+    const button121 = document.createElement('button');
+    if (div16 !== null) {
+      div16.innerHTML = '';
+      div16cont.innerHTML = '';
+      divcover16.innerHTML = '';
     }
-    section2.append(div14,h34,div15,h44flex,img21,divalign16)
-    divalign16.append(p21,divcover16)
-    div14.append(h34,div15)
-    h44flex.append(div15cont)
-    div15cont.append(h44cont,ulcont)
-    ulcont.append(licont,licont1,licont2,licont3)
-    licont.append(imgcont)
-    licont2.append(imgcont1)
-    
-    div19.append(button13,div20,button14)
-    h44flex.setAttribute('class', 'h44flexclass')
-    section2.setAttribute('class', 'section_pop_window')
-    div14.setAttribute('class', 'pop_container pop_window')
-    h34.setAttribute('class', 'pop_title')
-    div15.setAttribute('class', 'closeicon')
-    div15.setAttribute('onclick', 'myFunction(event)')
-    div16.setAttribute('class', 'move_buttons')
-    div16cont.setAttribute('class', 'move_buttons')
-    button10.setAttribute('class', 'pop_button_edit')
-    button10.setAttribute('type', 'button')
-    button11.setAttribute('class', 'pop_button_edit')
-    button11.setAttribute('type', 'button')
-    button12.setAttribute('class', 'pop_button_edit')
-    button12.setAttribute('type', 'button')
-    divalign16.setAttribute('class', 'align_last_items')
-    div17.setAttribute('class', 'divider')
-    div18.setAttribute('class', 'divider')
-    img21.setAttribute('class', 'portfolio_image')
-    img21.setAttribute('src', './images/portfolio1.svg')
-    img21.setAttribute('alt', 'portfolio_pic')
-    imgcont.setAttribute('src','./images/Counter.svg')
-    imgcont.setAttribute('alt', 'Counter image')
-    imgcont1.setAttribute('src','./images/Counter.svg')
-    imgcont1.setAttribute('alt', 'Counter image')
-    p21.setAttribute('class', 'pop_content')
-    div19.setAttribute('class', 'buttons_live_pop')
-    button13.setAttribute('class', 'padding_live live_link1')
-    button13.setAttribute('onclick',"window.location.href='https://medini-rajendra.github.io/project3_microverse';")
-    div20.setAttribute('class', 'divider_live')
-    button14.setAttribute('class', 'padding_live live_link2')
-    button14.setAttribute('onclick', "window.location.href='https://github.com/Medini-Rajendra/Mobile_Webpage_Menu';")
-    divcover16.setAttribute('class','aligndiv16elems')
+    div16.append(button10, button11, button12, div17);
+    div16cont.append(button101, button111, button121);
+    divcover16.append(div16, div16cont, div19);
+    button101.setAttribute('class', 'pop_button_edit');
+    button101.setAttribute('type', 'button');
+    button111.setAttribute('class', 'pop_button_edit');
+    button111.setAttribute('type', 'button');
+    button121.setAttribute('class', 'pop_button_edit');
+    button121.setAttribute('type', 'button');
+    button101.textContent = 'github';
+    button111.textContent = 'ruby';
+    button121.textContent = 'Bootstraps';
+  } else {
+    if (div16 !== null) {
+      div16.innerHTML = '';
+      div16cont.innerHTML = '';
+      divcover16.innerHTML = '';
+    }
+    div16.append(button10, button11, button12);
+    divcover16.append(div16, div19);
+  }
+  section2.append(div14, h34, div15, h44flex, img21, divalign16);
+  divalign16.append(p21, divcover16);
+  div14.append(h34, div15);
+  h44flex.append(div15cont);
+  div15cont.append(h44cont, ulcont);
+  ulcont.append(licont, licont1, licont2, licont3);
+  licont.append(imgcont);
+  licont2.append(imgcont1);
 
-    h34.textContent='Tonic'
-    h44cont.textContent='CANOPY'
-    div15.textContent='×'
-    licont1.innerHTML="\u00A0\u00A0Back End Dev"
-    licont3.innerHTML='\u00A0\u00A02015'
-    button10.textContent='html'
-    button11.textContent='css'
-    button12.textContent='javascript'
-    p21.textContent='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent'
-    button13.textContent='See live'
-    button14.textContent='See source'
+  div19.append(button13, div20, button14);
+  h44flex.setAttribute('class', 'h44flexclass');
+  section2.setAttribute('class', 'section_pop_window');
+  div14.setAttribute('class', 'pop_container pop_window');
+  h34.setAttribute('class', 'pop_title');
+  div15.setAttribute('class', 'closeicon');
+  div15.setAttribute('onclick', 'myFunction(event)');
+  div16.setAttribute('class', 'move_buttons');
+  div16cont.setAttribute('class', 'move_buttons');
+  button10.setAttribute('class', 'pop_button_edit');
+  button10.setAttribute('type', 'button');
+  button11.setAttribute('class', 'pop_button_edit');
+  button11.setAttribute('type', 'button');
+  button12.setAttribute('class', 'pop_button_edit');
+  button12.setAttribute('type', 'button');
+  divalign16.setAttribute('class', 'align_last_items');
+  div17.setAttribute('class', 'divider');
+  div18.setAttribute('class', 'divider');
+  img21.setAttribute('class', 'portfolio_image');
+  img21.setAttribute('src', './images/portfolio1.svg');
+  img21.setAttribute('alt', 'portfolio_pic');
+  imgcont.setAttribute('src', './images/Counter.svg');
+  imgcont.setAttribute('alt', 'Counter image');
+  imgcont1.setAttribute('src', './images/Counter.svg');
+  imgcont1.setAttribute('alt', 'Counter image');
+  p21.setAttribute('class', 'pop_content');
+  div19.setAttribute('class', 'buttons_live_pop');
+  button13.setAttribute('class', 'padding_live live_link1');
+  button13.setAttribute('onclick', "window.location.href='https://medini-rajendra.github.io/project3_microverse';");
+  div20.setAttribute('class', 'divider_live');
+  button14.setAttribute('class', 'padding_live live_link2');
+  button14.setAttribute('onclick', "window.location.href='https://github.com/Medini-Rajendra/Mobile_Webpage_Menu';");
+  divcover16.setAttribute('class', 'aligndiv16elems');
+
+  h34.textContent = 'Tonic';
+  h44cont.textContent = 'CANOPY';
+  div15.textContent = '×';
+  licont1.innerHTML = '\u00A0\u00A0Back End Dev';
+  licont3.innerHTML = '\u00A0\u00A02015';
+  button10.textContent = 'html';
+  button11.textContent = 'css';
+  button12.textContent = 'javascript';
+  p21.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
+  button13.textContent = 'See live';
+  button14.textContent = 'See source';
 }
 
-function PopProjectWin(div2class, image, title, subtit1, subtit2, subtit3, imglinkclass, tech0, tech1, tech2) {
-  this.divclass = div2class;
+function PopProjectWin(div2c, image, title, subtit1, subtit2, subtit3, iml, tech0, tech1, tech2) {
+  this.divclass = div2c;
   this.title = title;
   this.image = image;
   this.subtit1 = subtit1;
   this.subtit2 = subtit2;
   this.subtit3 = subtit3;
-  this.imglinkclass = imglinkclass;
+  this.imglinkclass = iml;
   this.tech0 = tech0;
   this.tech1 = tech1;
   this.tech2 = tech2;
@@ -254,16 +254,16 @@ const projects = [project0, project1, project2, project3];
 const gridtitles = [];
 const titles = [];
 const images = [];
-const subtitles1=[];
-const subtitles2=[];
-const subtitles3=[];
+const subtitles1 = [];
+const subtitles2 = [];
+const subtitles3 = [];
 const imglinks = [];
 const tech0s = [];
 const tech1s = [];
 const tech2s = [];
 
 for (let i = 0; i < projects.length; i += 1) {
-  gridtitles.push(projects[i].divclass)
+  gridtitles.push(projects[i].divclass);
   titles.push(projects[i].title);
   images.push(projects[i].image);
   subtitles1.push(projects[i].subtit1);
@@ -275,77 +275,76 @@ for (let i = 0; i < projects.length; i += 1) {
   tech2s.push(projects[i].tech2);
 }
 
-const divgrid = document.getElementById('portfolio')
+const divgrid = document.getElementById('portfolio');
 
-function displayProject(div2classtitle, image, title, subtit1, subtit2, subtit3, imglinkclass, tech0, tech1, tech2) {
+function displayProject(div2c, image, title, subtit1, subtit2, subtit3, iml, tech0, tech1, tech2) {
   const div2 = document.createElement('div');
-  div2.setAttribute('class', div2classtitle)
-  div2.setAttribute('id', 'blur')
-  divgrid.append(div2)
-  const img2 = document.createElement('img')
+  div2.setAttribute('class', div2c);
+  divgrid.append(div2);
+  const img2 = document.createElement('img');
   const div3 = document.createElement('div');
-  const h3 = document.createElement('h1')
+  const h3 = document.createElement('h1');
   const div4 = document.createElement('div');
-  const h4 = document.createElement('h4')
+  const h4 = document.createElement('h4');
   const ul4 = document.createElement('ul');
   const li4 = document.createElement('li');
-  const img3 = document.createElement('img')
+  const img3 = document.createElement('img');
   const li5 = document.createElement('li');
   const li6 = document.createElement('li');
-  const img4 = document.createElement('img')
+  const img4 = document.createElement('img');
   const li7 = document.createElement('li');
   const p2add = document.createElement('p');
   const p3add = document.createElement('p');
   const ul5 = document.createElement('ul');
   const li8 = document.createElement('li');
-  const h5 = document.createElement('h4')
+  const h5 = document.createElement('h4');
   const li9 = document.createElement('li');
-  const h6 = document.createElement('h4')
+  const h6 = document.createElement('h4');
   const li10 = document.createElement('li');
-  const h7 = document.createElement('h4')
-  const a1chk = document.createElement('a')
-  const a2chk = document.createElement('a')
-  const a3chk = document.createElement('a')
-  const a4chk = document.createElement('a')
+  const h7 = document.createElement('h4');
+  const a1chk = document.createElement('a');
+  const a2chk = document.createElement('a');
+  const a3chk = document.createElement('a');
+  const a4chk = document.createElement('a');
 
-  div2.append(img2,div3)
-  div3.append(h3,div4,p2add,p3add,ul5,a4chk)
-  div4.append(h4,ul4)
-  ul4.append(li4,li5,li6,li7)
-  li4.append("\u00A0\u00A0")
-  li4.append(img3)
-  li6.append(img4)
-  ul5.append(li8,li9,li10)
-  li8.append(h5)
-  h5.append(a1chk)
-  li9.append(h6)
-  h6.append(a2chk)
-  li10.append(h7)
-  h7.append(a3chk)
+  div2.append(img2, div3);
+  div3.append(h3, div4, p2add, p3add, ul5, a4chk);
+  div4.append(h4, ul4);
+  ul4.append(li4, li5, li6, li7);
+  li4.append('\u00A0\u00A0');
+  li4.append(img3);
+  li6.append(img4);
+  ul5.append(li8, li9, li10);
+  li8.append(h5);
+  h5.append(a1chk);
+  li9.append(h6);
+  h6.append(a2chk);
+  li10.append(h7);
+  h7.append(a3chk);
 
   img2.setAttribute('src', image);
-  h3.textContent=title;
-  h4.textContent=subtit1;
-  li5.textContent="\u00A0\u00A0"+subtit2;
-  li7.textContent="\u00A0\u00A0"+subtit3;
-  img3.setAttribute('src','./images/Counter.svg')
-  img3.setAttribute('alt', 'Counter image')
-  img4.setAttribute('src','./images/Counter.svg')
-  img4.setAttribute('alt', 'Counter image')
-  p2add.setAttribute('class','p_mobile')
-  p2add.textContent=imglinkclass;
-  p3add.setAttribute('class', 'p_desktop')
-  p3add.textContent='A daily selection of privately personlized reads; no accounts <br> or sign-ups required.';
-  ul5.setAttribute('class','diff_classes')
-  a1chk.setAttribute('href','#')
-  a2chk.setAttribute('href', '#')
-  a3chk.setAttribute('href','#')
-  a1chk.textContent=tech0;
-  a2chk.textContent=tech1;
-  a3chk.textContent=tech2;
-  a4chk.setAttribute('onclick','pop_window_click()')
-  a4chk.setAttribute('href','#')
-  a4chk.textContent='See Project'
+  h3.textContent = title;
+  h4.textContent = subtit1;
+  li5.textContent = `\u00A0\u00A0${subtit2}`;
+  li7.textContent = `\u00A0\u00A0${subtit3}`;
+  img3.setAttribute('src', './images/Counter.svg');
+  img3.setAttribute('alt', 'Counter image');
+  img4.setAttribute('src', './images/Counter.svg');
+  img4.setAttribute('alt', 'Counter image');
+  p2add.setAttribute('class', 'p_mobile');
+  p2add.textContent = iml;
+  p3add.setAttribute('class', 'p_desktop');
+  p3add.textContent = 'A daily selection of privately personlized reads; no accounts <br> or sign-ups required.';
+  ul5.setAttribute('class', 'diff_classes');
+  a1chk.setAttribute('href', '#');
+  a2chk.setAttribute('href', '#');
+  a3chk.setAttribute('href', '#');
+  a1chk.textContent = tech0;
+  a2chk.textContent = tech1;
+  a3chk.textContent = tech2;
+  a4chk.setAttribute('onclick', 'popWindowClick()');
+  a4chk.setAttribute('href', '#');
+  a4chk.textContent = 'See Project';
 }
 
 for (let i = 0; i < titles.length; i += 1) {
@@ -365,4 +364,6 @@ for (let i = 0; i < titles.length; i += 1) {
 
 module.exports = {
   MobileMenu,
+  myFunction,
+  popWindowClick,
 };
