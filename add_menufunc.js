@@ -401,6 +401,61 @@ function displayProject(div2c, image, title, subt1, subt2, subt3, iml, tech0, te
   a4chk.textContent = 'See Project';
 }
 
+const form = document.querySelector('form');
+
+function validation() {
+  const mail = document.getElementById('email').value;
+
+  const error = document.getElementById('error');
+
+  error.style.position = 'relative';
+  error.style.top = '430%';
+  error.style.left = '5%';
+  error.style.whiteSpace = 'nowrap';
+  const pattern = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
+  const pattern1 = /A-Z/;
+
+  if (mail.match(pattern)) {
+    if (mail.match(pattern1)) {
+      error.innerText = 'email must be in lower case';
+    } else {
+      error.innerText = 'you\'re cool';
+    }
+  } else {
+    error.innerText = 'Please input correct email id';
+  }
+}
+
+form.addEventListener('submit', (e) => {
+  const mail = document.getElementById('email').value;
+  const error = document.getElementById('error');
+  const error1 = document.getElementById('error1');
+  const pattern = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
+  const pattern1 = /[A-Z]/;
+  const namechk = document.getElementById('name').value;
+  let cntval = 0;
+
+  if (!/^[a-zA-Z]*$/g.test(namechk)) {
+    error1.style.position = 'relative';
+    error1.style.top = '30%';
+    error1.innerText = 'invalid characters in name, only alphabets';
+    e.preventDefault();
+  } else if (mail.match(pattern)) {
+    console.log('works now');
+  } else {
+    error.innerText = 'Please input correct email id';
+    e.preventDefault();
+    cntval += 1;
+  }
+
+  if (mail.match(pattern1)) {
+    error.innerText = 'email must be in lower case';
+    e.preventDefault();
+  } else if (cntval === 0) {
+    error.innerText = 'you\'re cool';
+  }
+});
+
 for (let i = 0; i < titles.length; i += 1) {
   displayProject(
     gridtitles[i],
@@ -421,4 +476,5 @@ module.exports = {
   MobileMenu,
   myFunction,
   popWindowClick,
+  validation,
 };
