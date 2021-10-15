@@ -404,7 +404,6 @@ function displayProject(div2c, image, title, subt1, subt2, subt3, iml, tech0, te
 const form = document.querySelector('form');
 
 function validation() {
-  console.log('im validation')
   const mail = document.getElementById('email').value;
 
   const error = document.getElementById('error');
@@ -455,4 +454,5 @@ module.exports = {
   MobileMenu,
   myFunction,
   popWindowClick,
+  validation,
 };
