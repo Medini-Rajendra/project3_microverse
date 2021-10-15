@@ -401,6 +401,40 @@ function displayProject(div2c, image, title, subt1, subt2, subt3, iml, tech0, te
   a4chk.textContent = 'See Project';
 }
 
+const form = document.querySelector('form');
+
+function validation() {
+  console.log('im validation')
+  const mail = document.getElementById('email').value;
+
+  const error = document.getElementById('error');
+
+  error.style.position = 'relative';
+  error.style.top = '430%';
+  error.style.left = '5%';
+  error.style.whiteSpace = 'nowrap';
+  const pattern = /[A-Z]/;
+
+  if (mail.match(pattern)) {
+    error.innerText = 'email must be in lower case';
+  } else {
+    error.innerText = 'you\'re cool';
+  }
+}
+
+form.addEventListener('submit', (e) => {
+  const mail = document.getElementById('email').value;
+  const error = document.getElementById('error');
+  const pattern = /[A-Z]/;
+
+  if (mail.match(pattern)) {
+    error.innerText = 'email must be in lower case';
+    e.preventDefault();
+  } else {
+    error.innerText = 'you\'re cool';
+  }
+});
+
 for (let i = 0; i < titles.length; i += 1) {
   displayProject(
     gridtitles[i],
