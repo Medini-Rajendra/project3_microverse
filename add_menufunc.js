@@ -431,24 +431,28 @@ form.addEventListener('submit', (e) => {
   const error = document.getElementById('error');
   const error1 = document.getElementById('error1');
   const pattern = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
-  const pattern1 = /^[A-Z]/;
-
+  const pattern1 = /[A-Z]/;
   const namechk = document.getElementById('name').value;
+  let cntval = 0;
+
   if (!/^[a-zA-Z]*$/g.test(namechk)) {
     error1.style.position = 'relative';
     error1.style.top = '30%';
     error1.innerText = 'invalid characters in name, only alphabets';
     e.preventDefault();
   } else if (mail.match(pattern)) {
-    if (mail.match(pattern1)) {
-      error.innerText = 'email must be in lower case';
-      e.preventDefault();
-    } else {
-      error.innerText = 'you\'re cool';
-    }
+    console.log('works now');
   } else {
     error.innerText = 'Please input correct email id';
     e.preventDefault();
+    cntval += 1;
+  }
+
+  if (mail.match(pattern1)) {
+    error.innerText = 'email must be in lower case';
+    e.preventDefault();
+  } else if (cntval === 0) {
+    error.innerText = 'you\'re cool';
   }
 });
 
