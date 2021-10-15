@@ -456,6 +456,37 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+const getname = document.getElementById('name');
+const getemail = document.getElementById('email');
+const getmsg = document.getElementById('msg');
+
+function Stored(name, mail, message) {
+  this.name = name;
+  this.mail = mail;
+  this.message = message;
+}
+
+let data = 0;
+
+function addToStorage() {
+  data = new Stored(getname.value, getemail.value, getmsg.value);
+  data = JSON.stringify(data);
+  localStorage.setItem('data', data);
+}
+
+function prefillForm() {
+  data = JSON.parse(localStorage.data);
+  getname.value = data.name;
+  getemail.value = data.mail;
+  getmsg.value = data.message;
+}
+
+if (localStorage !== null) {
+  prefillForm();
+} else {
+  console.log('local storage null');
+}
+
 for (let i = 0; i < titles.length; i += 1) {
   displayProject(
     gridtitles[i],
@@ -477,4 +508,5 @@ module.exports = {
   myFunction,
   popWindowClick,
   validation,
+  addToStorage,
 };
