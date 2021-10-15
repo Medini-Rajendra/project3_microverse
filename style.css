@@ -225,6 +225,11 @@ nav {
   padding-left: 5%;
 }
 
+.h44flexclass > div > ul {
+  padding-left: 3%;
+  width: 100%;
+}
+
 .grid-container > div > div > ul {
   padding-top: 3%;
   padding-bottom: 3%;
@@ -620,7 +625,8 @@ nav {
 
 .closeicon {
   font-size: 2em;
-  padding-left: 55%;
+  position: absolute;
+  left: 90%;
 }
 
 .portfolio_image {
@@ -630,11 +636,6 @@ nav {
 
 .pop_container {
   display: flex;
-}
-
-.h44flexclass > div > ul {
-  padding-left: 3%;
-  width: 100%;
 }
 
 .h44flexclass > div > ul > li:nth-child(3) {
@@ -910,8 +911,8 @@ nav {
 
   .closeicon {
     font-size: 3em;
-    position: relative;
-    left: 30%;
+    position: absolute;
+    left: 90%;
   }
 
   .align_last_items {
@@ -1056,10 +1057,6 @@ nav {
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-  }
-
-  .grid-container > div > div > div > ul {
-    margin-top: -1.5%;
   }
 
   .grid-container > div > div > div > h4 {
@@ -1217,6 +1214,7 @@ nav {
   }
 
   .grid-container > div > div > div > ul {
+    margin-top: -1.5%;
     padding-left: unset;
   }
 }

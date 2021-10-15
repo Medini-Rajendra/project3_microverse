@@ -96,7 +96,61 @@ function myFunction(e) {
   }
 }
 
-function popWindowClick() {
+const projects = [
+  {
+    gridclass: 'grid-item item1',
+    imageurl: './images/portfolio1.svg',
+    title: 'Tonic',
+    subtitle1: 'CANOPY',
+    subtitle2: 'Back End Dev',
+    subtitle3: '2015',
+    description: 'A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required',
+    tech0: 'html',
+    tech1: 'css',
+    tech2: 'javascript',
+  },
+
+  {
+    gridclass: 'grid-item item2',
+    imageurl: './images/portfolio2.svg',
+    title: 'Multi-Post Stories',
+    subtitle1: 'CANOPY',
+    subtitle2: 'Back End Dev',
+    subtitle3: '2015',
+    description: 'A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required',
+    tech0: 'html',
+    tech1: 'css',
+    tech2: 'javascript',
+  },
+
+  {
+    gridclass: 'grid-item item3',
+    imageurl: './images/portfolio3.svg',
+    title: 'Facebook 360',
+    subtitle1: 'CANOPY',
+    subtitle2: 'Back End Dev',
+    subtitle3: '2015',
+    description: 'A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required',
+    tech0: 'html',
+    tech1: 'css',
+    tech2: 'javascript',
+  },
+
+  {
+    gridclass: 'grid-item item4',
+    imageurl: './images/portfolio4.svg',
+    title: 'Uber Navigation',
+    subtitle1: 'CANOPY',
+    subtitle2: 'Back End Dev',
+    subtitle3: '2015',
+    description: 'A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required',
+    tech0: 'html',
+    tech1: 'css',
+    tech2: 'javascript',
+  },
+];
+
+function popWindowClick(idnom) {
   toggle();
   body.append(section2);
   if (window.innerWidth > 700) {
@@ -157,7 +211,7 @@ function popWindowClick() {
   div17.setAttribute('class', 'divider');
   div18.setAttribute('class', 'divider');
   img21.setAttribute('class', 'portfolio_image');
-  img21.setAttribute('src', './images/portfolio1.svg');
+  img21.setAttribute('src', `./images/portfolio${idnom}.svg`);
   img21.setAttribute('alt', 'portfolio_pic');
   imgcont.setAttribute('src', './images/Counter.svg');
   imgcont.setAttribute('alt', 'Counter image');
@@ -172,7 +226,7 @@ function popWindowClick() {
   button14.setAttribute('onclick', "window.location.href='https://github.com/Medini-Rajendra/Mobile_Webpage_Menu';");
   divcover16.setAttribute('class', 'aligndiv16elems');
 
-  h34.textContent = 'Tonic';
+  h34.textContent = projects[idnom - 1].title;
   h44cont.textContent = 'CANOPY';
   div15.textContent = '×';
   licont1.innerHTML = '\u00A0\u00A0Back End Dev';
@@ -185,7 +239,7 @@ function popWindowClick() {
   button14.textContent = 'See source';
 }
 
-function PopProjectWin(div2c, image, title, subtit1, subtit2, subtit3, iml, tech0, tech1, tech2) {
+/* function PopProjectWin() {
   this.divclass = div2c;
   this.title = title;
   this.image = image;
@@ -198,7 +252,7 @@ function PopProjectWin(div2c, image, title, subtit1, subtit2, subtit3, iml, tech
   this.tech2 = tech2;
 }
 
-/* const project0 = new PopProjectWin(
+ const project0 = new PopProjectWin(
   'grid-item item1',
   './images/portfolio1.svg',
   'Tonic',
@@ -250,60 +304,6 @@ const project3 = new PopProjectWin(
   'javascript',
 ); */
 
-const projects = [
-  {
-    gridclass: "grid-item item1",
-    imageurl: "./images/portfolio1.svg",
-    title: "Tonic",
-    subtitle1: "CANOPY",
-    subtitle2: "Back End Dev",
-    subtitle3: "2015",
-    description: "A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required", 
-    tech0: "html",
-    tech1: "css",
-    tech2: "javascript"
-  },
-
-  {
-    gridclass: "grid-item item2",
-    imageurl: "./images/portfolio2.svg",
-    title: "Multi-Post Stories",
-    subtitle1: "CANOPY",
-    subtitle2: "Back End Dev",
-    subtitle3: "2015",
-    description: "A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required", 
-    tech0: "html",
-    tech1: "css",
-    tech2: "javascript"
-  },
-
-  {
-    gridclass: "grid-item item3",
-    imageurl: "./images/portfolio3.svg",
-    title: "Facebook 360",
-    subtitle1: "CANOPY",
-    subtitle2: "Back End Dev",
-    subtitle3: "2015",
-    description: "A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required", 
-    tech0: "html",
-    tech1: "css",
-    tech2: "javascript"
-  },
-
-  {
-    gridclass: "grid-item item4",
-    imageurl: "./images/portfolio4.svg",
-    title: "Uber Navigation",
-    subtitle1: "CANOPY",
-    subtitle2: "Back End Dev",
-    subtitle3: "2015",
-    description: "A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required", 
-    tech0: "html",
-    tech1: "css",
-    tech2: "javascript"
-  }
-]
-
 const gridtitles = [];
 const titles = [];
 const images = [];
@@ -330,7 +330,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
 const divgrid = document.getElementById('portfolio');
 
-function displayProject(div2c, image, title, subtit1, subtit2, subtit3, iml, tech0, tech1, tech2) {
+function displayProject(div2c, image, title, subt1, subt2, subt3, iml, tech0, tech1, tech2, idnum) {
   const div2 = document.createElement('div');
   div2.setAttribute('class', div2c);
   divgrid.append(div2);
@@ -376,11 +376,11 @@ function displayProject(div2c, image, title, subtit1, subtit2, subtit3, iml, tec
   h7.append(a3chk);
 
   img2.setAttribute('src', image);
-  img2.setAttribute('class', 'img-fluid')
+  img2.setAttribute('class', 'img-fluid');
   h3.textContent = title;
-  h4.textContent = subtit1;
-  li5.textContent = `\u00A0\u00A0${subtit2}`;
-  li7.textContent = `\u00A0\u00A0${subtit3}`;
+  h4.textContent = subt1;
+  li5.textContent = `\u00A0\u00A0${subt2}`;
+  li7.textContent = `\u00A0\u00A0${subt3}`;
   img3.setAttribute('src', './images/Counter.svg');
   img3.setAttribute('alt', 'Counter image');
   img4.setAttribute('src', './images/Counter.svg');
@@ -396,7 +396,7 @@ function displayProject(div2c, image, title, subtit1, subtit2, subtit3, iml, tec
   a1chk.textContent = tech0;
   a2chk.textContent = tech1;
   a3chk.textContent = tech2;
-  a4chk.setAttribute('onclick', 'popWindowClick()');
+  a4chk.setAttribute('onclick', `popWindowClick(${idnum + 1})`);
   a4chk.setAttribute('href', '#');
   a4chk.textContent = 'See Project';
 }
@@ -413,6 +413,7 @@ for (let i = 0; i < titles.length; i += 1) {
     tech0s[i],
     tech1s[i],
     tech2s[i],
+    i,
   );
 }
 
