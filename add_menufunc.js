@@ -198,7 +198,7 @@ function PopProjectWin(div2c, image, title, subtit1, subtit2, subtit3, iml, tech
   this.tech2 = tech2;
 }
 
-const project0 = new PopProjectWin(
+/* const project0 = new PopProjectWin(
   'grid-item item1',
   './images/portfolio1.svg',
   'Tonic',
@@ -248,9 +248,62 @@ const project3 = new PopProjectWin(
   'html',
   'css',
   'javascript',
-);
+); */
 
-const projects = [project0, project1, project2, project3];
+const projects = [
+  {
+    gridclass: "grid-item item1",
+    imageurl: "./images/portfolio1.svg",
+    title: "Tonic",
+    subtitle1: "CANOPY",
+    subtitle2: "Back End Dev",
+    subtitle3: "2015",
+    description: "A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required", 
+    tech0: "html",
+    tech1: "css",
+    tech2: "javascript"
+  },
+
+  {
+    gridclass: "grid-item item2",
+    imageurl: "./images/portfolio2.svg",
+    title: "Multi-Post Stories",
+    subtitle1: "CANOPY",
+    subtitle2: "Back End Dev",
+    subtitle3: "2015",
+    description: "A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required", 
+    tech0: "html",
+    tech1: "css",
+    tech2: "javascript"
+  },
+
+  {
+    gridclass: "grid-item item3",
+    imageurl: "./images/portfolio3.svg",
+    title: "Facebook 360",
+    subtitle1: "CANOPY",
+    subtitle2: "Back End Dev",
+    subtitle3: "2015",
+    description: "A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required", 
+    tech0: "html",
+    tech1: "css",
+    tech2: "javascript"
+  },
+
+  {
+    gridclass: "grid-item item4",
+    imageurl: "./images/portfolio4.svg",
+    title: "Uber Navigation",
+    subtitle1: "CANOPY",
+    subtitle2: "Back End Dev",
+    subtitle3: "2015",
+    description: "A daily selection of privately <br> personlized reads; no accounts or <br> sign-ups required", 
+    tech0: "html",
+    tech1: "css",
+    tech2: "javascript"
+  }
+]
+
 const gridtitles = [];
 const titles = [];
 const images = [];
@@ -263,13 +316,13 @@ const tech1s = [];
 const tech2s = [];
 
 for (let i = 0; i < projects.length; i += 1) {
-  gridtitles.push(projects[i].divclass);
+  gridtitles.push(projects[i].gridclass);
   titles.push(projects[i].title);
-  images.push(projects[i].image);
-  subtitles1.push(projects[i].subtit1);
-  subtitles2.push(projects[i].subtit2);
-  subtitles3.push(projects[i].subtit3);
-  imglinks.push(projects[i].imglinkclass);
+  images.push(projects[i].imageurl);
+  subtitles1.push(projects[i].subtitle1);
+  subtitles2.push(projects[i].subtitle2);
+  subtitles3.push(projects[i].subtitle3);
+  imglinks.push(projects[i].description);
   tech0s.push(projects[i].tech0);
   tech1s.push(projects[i].tech1);
   tech2s.push(projects[i].tech2);
@@ -323,6 +376,7 @@ function displayProject(div2c, image, title, subtit1, subtit2, subtit3, iml, tec
   h7.append(a3chk);
 
   img2.setAttribute('src', image);
+  img2.setAttribute('class', 'img-fluid')
   h3.textContent = title;
   h4.textContent = subtit1;
   li5.textContent = `\u00A0\u00A0${subtit2}`;
