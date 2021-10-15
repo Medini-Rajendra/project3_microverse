@@ -412,11 +412,34 @@ function validation() {
   error.style.top = '430%';
   error.style.left = '5%';
   error.style.whiteSpace = 'nowrap';
-  const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const pattern = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
   const pattern1 = /A-Z/;
-  
+
   if (mail.match(pattern)) {
-    console.log('Inputted correct email')
+    if (mail.match(pattern1)) {
+      error.innerText = 'email must be in lower case';
+    } else {
+      error.innerText = 'you\'re cool';
+    }
+  } else {
+    error.innerText = 'Please input correct email id';
+  }
+}
+
+form.addEventListener('submit', (e) => {
+  const mail = document.getElementById('email').value;
+  const error = document.getElementById('error');
+  const error1 = document.getElementById('error1');
+  const pattern = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
+  const pattern1 = /^[A-Z]/i;
+
+  const namechk = document.getElementById('name').value;
+  if (!/^[a-zA-Z]*$/g.test(namechk)) {
+    error1.style.position = 'relative';
+    error1.style.top = '30%';
+    error1.innerText = 'invalid characters in name, only alphabets';
+    e.preventDefault();
+  } else if (mail.match(pattern)) {
     if (mail.match(pattern1)) {
       error.innerText = 'email must be in lower case';
       e.preventDefault();
@@ -424,36 +447,8 @@ function validation() {
       error.innerText = 'you\'re cool';
     }
   } else {
-    error.innerText = 'Please input correct email id'
+    error.innerText = 'Please input correct email id';
     e.preventDefault();
-  }
-}
-
-form.addEventListener('submit', (e) => {
-  const mail = document.getElementById('email').value;
-  const error = document.getElementById('error');
-  console.log(form.email.value)
-  const pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  const pattern1 = /^[A-Z]/i;
-
-  const namechk=document.getElementById('name').value;
-  if (!/^[a-zA-Z]*$/g.test(namechk)) {
-    error1.style.position = 'relative';
-    error1.style.top = '30%';
-    error1.innerText = 'invalid characters in name, only alphabets';
-    e.preventDefault();
-  } else {
-    if (mail.match(pattern)) {
-      if (mail.match(pattern1)) {
-        error.innerText = 'email must be in lower case';
-        e.preventDefault();
-      } else {
-        error.innerText = 'you\'re cool';
-      }
-    } else {
-      error.innerText = 'Please input correct email id'
-      e.preventDefault();
-    }
   }
 });
 
