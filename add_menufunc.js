@@ -431,7 +431,7 @@ form.addEventListener('submit', (e) => {
   const error = document.getElementById('error');
   const error1 = document.getElementById('error1');
   const pattern = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
-  const pattern1 = /^[A-Z]/i;
+  const pattern1 = /^[A-Z]/;
 
   const namechk = document.getElementById('name').value;
   if (!/^[a-zA-Z]*$/g.test(namechk)) {
