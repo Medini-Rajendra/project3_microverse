@@ -456,6 +456,62 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+const getname = document.getElementById('name');
+const getemail = document.getElementById('email');
+const getmsg = document.getElementById('msg');
+
+let data = 0;
+
+function Stored(name, mail, message) {
+  this.name = name;
+  this.mail = mail;
+  this.message = message;
+}
+
+function addToStorage() {
+  data = new Stored(getname.value, getemail.value, getmsg.value);
+  data = JSON.stringify(data);
+  localStorage.setItem('data', data);
+}
+
+const storageInput = document.querySelector('.contact_form_name');
+const storageInput1 = document.querySelector('.contact_form_email');
+const storageInput2 = document.querySelector('.contact_form_message');
+
+storageInput.addEventListener('input', (letter) => {
+  getname.value = letter.target.value;
+  addToStorage();
+});
+
+storageInput1.addEventListener('input', (letter) => {
+  getemail.value = letter.target.value;
+  addToStorage();
+});
+
+storageInput2.addEventListener('input', (letter) => {
+  getmsg.value = letter.target.value;
+  addToStorage();
+});
+
+if (performance.navigation.type < 1) {
+  localStorage.clear();
+}
+
+function prefillForm() {
+  if (typeof localStorage.data !== 'undefined') {
+    data = JSON.parse(localStorage.data);
+    getname.value = data.name;
+    getemail.value = data.mail;
+    getmsg.value = data.message;
+  }
+}
+
+if (localStorage !== null) {
+  prefillForm();
+} else {
+  console.log('local storage null');
+}
+
 for (let i = 0; i < titles.length; i += 1) {
   displayProject(
     gridtitles[i],
@@ -477,4 +533,5 @@ module.exports = {
   myFunction,
   popWindowClick,
   validation,
+  addToStorage,
 };
